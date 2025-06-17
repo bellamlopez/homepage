@@ -1,0 +1,100 @@
+
+
+body {
+background-color: rgba(42, 117, 108, 0.565);
+
+h1 { 
+    text-align: center;
+    color: rgb(255, 245, 235);
+    text-shadow: 2px 2px rgb(225, 60, 142);
+    font-size: 50px;
+    font-family: monospace;
+}
+
+h2 {
+    text-align: center;
+    padding: 30px;
+    color: rgb(225, 60, 142);
+    background-color: rgba(27, 98, 133, 0.406);
+    font-size: 30px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+
+
+
+}
+
+.special-img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1800px;
+}
+
+.special-d{
+    text-align: justify;
+    color: rgb(255, 245, 235);
+    text-shadow: 2px 2px rgb(225, 60, 142);
+    font-size: 50px;
+    font-family: monospace;
+
+}
+
+.id{
+    padding-right: 10px;
+    width: 700px;
+    padding-top: 10px; 
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.special{
+    text-align: right;
+    margin-right: 600px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:60px;
+    background-color:transparent;
+      color: rgb(35, 56, 125);
+    text-shadow: 2px 2px; color: rgb(35, 56, 125); 
+
+}
+    
+h3{
+    text-align: center;
+    padding: 30px;
+    color: rgb(35, 56, 125);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: right 
+}
+
+.special-p{
+    background-color: rgba(255, 245, 235, 0.804); 
+    font-size:20px;
+    color:rgb(45, 29, 26);
+    font-family: 'Courier New', Courier, monospace ;
+    padding: 50px; 
+    margin-inline-start: 200px;
+    margin-inline-end: 200px;
+}
+ p{
+    font: size 55px;
+    text-align: justify;
+    color: rgb(255, 245, 235); 
+    font-family: 'Courier New', Courier, monospace ;
+    padding: 100px;
+    margin-inline-start: 700px;
+
+}
+
+ul{
+    background-color:rgba(27, 98, 133, 0.287);
+    font-family: 'Courier New', Courier, monospace ;
+    font-size: 35px;
+    color: rgb(35, 56, 125);
+    margin-right: 600px;
+    margin-left: 600px;
+    border-style:double;
+}
+
+
+}
