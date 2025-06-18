@@ -1,4 +1,32 @@
-body {
-    background-color: blanchedalmond;
-    color:rgb(187, 155, 106)
+
+@font-face{
+    font-family:'blue ocean';
+    src: url('BLUE\ OCEAN.ttf') format ('truetype');
 }
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #c33b01;
+    background-image: radial-gradient(rgba(217, 255, 198, 0.432) 5%, rgba(49, 163, 208, 0.755) 15%, rgba(130, 223, 255, 0.744) 60%);
+
+  
+}
+
+
+h1,h2 {
+    color:rgba(217, 255, 198, 0.784);
+    text-align: center;
+    text-shadow: 2px 2px 4px #024e76;
+    padding-bottom: 150px;
+    padding-top: 60px;
+    font-family: 'blue ocean',sans-serif;
+
+}
+
+.fixed-bottom {
+    width: 100%
+ 
+}
+
+
+   
