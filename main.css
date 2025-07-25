@@ -7,7 +7,6 @@
 body {
     font-family: 'Arial', sans-serif;
     color: #c33b01;
-    background-image: radial-gradient(rgba(217, 255, 198, 0.432) 5%, rgba(49, 163, 208, 0.755) 15%, rgba(130, 223, 255, 0.744) 60%);
 
   
 }
@@ -20,6 +19,7 @@ h1,h2 {
     padding-bottom: 150px;
     padding-top: 60px;
     font-family: 'blue ocean',sans-serif;
+    font-size:100px;
 
 }
 

@@ -1,0 +1,60 @@
+
+*{
+    box-sizing:border-box;
+}
+
+img {
+    max-width:100%
+}
+
+.margin-center {
+    background-color: lavender;
+    padding:10px;
+    max-width: 600px;
+    margin:50px auto; 
+   /* margin: (top)10px (right)20px (bottom)30px (left)40px; IF MARGIN HAS 2 VALUES, THE FIRST VALUE CORRESPONS WITH THE TOP AND BOTTOM, SECOND WITH THE LEFT AND RIGHT*/
+}
+
+.translate-center {
+    background-color: rgba(250, 128, 114, 0.733);
+    padding:10px;
+    width: 600px;
+    max-width:100%;
+
+    position:relative;
+    left:50%;
+    /*transform:translate(-50%, -50%); */
+    translate: -50%;
+    
+    /* lowkey the last method of centering to use, it gets buggy*/
+
+}
+
+.container {
+    background:rgb(255, 140, 0);
+    padding:10px;
+    display:flex;
+
+    /*the flex direction determines the main and cross axis directions,nwhich changes how our alignment properties work*/
+    flex-direction:row;
+    
+    justify-content:center;
+    /*align items is used for signle line flexboxes */
+   
+    flex-wrap:wrap;
+    /* align content is used for multi-line, wrapping flexboxes */
+    align-content:center;
+
+    gap:30px;
+    /*use gap instead of margins for flexboxes*/
+
+    height:400px;
+}
+
+.item {
+    background-color: rgba(255, 191, 0, 0.768);
+    padding:10px;
+    border:1px solid red;
+
+    width:200px;
+}

@@ -1,0 +1,139 @@
+
+*{
+    box-sizing:border-box;
+}
+
+h1 {
+     padding-top:30px;
+     padding-bottom:30px;
+     text-align:center;
+     font-size: 45px;
+     text-shadow: 2px 2px 4px darkslategray;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: rgba(32, 31, 33, 0.862);
+     background-color: rgba(151, 175, 197, 0.878);
+     border-color: rgba(32, 31, 33, 0.728);
+     border-style:double;
+}
+
+h4 {
+     padding-top:10px;
+     padding-bottom:10px;
+     text-align:center;
+     color:rgb(245, 245, 245);
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-image: linear-gradient( whitesmoke, darkslategray);
+    min-height: 100vh;
+    margin:0;
+    opacity:0.8;
+
+  padding: 0;
+  background-image: url('../assets/water-tower.png'); /* Replace with your image path */
+  background-size: cover;       /* Makes it fill the entire page */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-attachment: fixed; /* Keeps image in place when scrolling */
+  background-position: center;  /* Centers the image */
+}
+
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.button-link {
+    display: inline-block;
+    background-color:darkslategrey;
+    padding: 30px 20px;
+    color:whitesmoke;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    text-align:center;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button-link:hover {
+    background-color:rgb(47, 64, 79);
+    border-color:whitesmoke;
+}
+
+.container {
+    padding:10px;
+    display:flex;
+
+    /*the flex direction determines the main and cross axis directions,nwhich changes how our alignment properties work*/
+    flex-direction:column;
+    
+    /*align items is used for signle line flexboxes */
+   
+    /* align content is used for multi-line, wrapping flexboxes */
+    align-content:center;
+
+    gap:1rem;
+    /*use gap instead of margins for flexboxes*/
+
+    height:100vh;
+
+    overflow-y:auto;
+
+}
+
+
+.chapter-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:30px;
+    text-align:center;
+    color:whitesmoke;
+
+}
+
+
+.chapter-dropdown {
+  position:relative;
+    margin-bottom: 2rem;
+  border-radius: 6px;
+  padding: 70px;
+  overflow-y: auto;
+  border-color: darkslategray;
+  width: 100vw;
+  
+}
+
+.chapter-content {
+   /*max-height: 0;*/
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 5s ease, opacity 2s ease;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  padding-top:15px;
+  color: rgb(47, 64, 79);
+  background-color: whitesmoke;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:15px;
+    text-align:center;
+pointer-events:none;
+}
+
+/* Optional: Style summary as a button-like toggle */
+.chapter-dropdown summary {
+  display: none;
+}
+
+.chapter-dropdown:hover .chapter-content {
+  /*max-height: 1000px;  /* big enough to show content */
+  opacity: 1;
+  /*padding-top: 10px;
+  padding-bottom: 10px;
+  overflow-y: auto; */
+}
+
+

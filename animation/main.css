@@ -1,0 +1,149 @@
+
+*{
+    box-sizing:border-box;
+}
+
+img {
+    max-width:100%
+}
+
+.test{
+    background-color: lightseagreen;
+    width:100px;
+    height:100px;
+    position:relative;
+
+    animation: test 4s 2s infinite alternate cubic-bezier(1,-0.61,0,1.38) both;
+
+   /* animation-name:test;
+    animation-duration:4s;
+    animation-delay: 2s;
+    /*animation-iteration-count:infinite; */
+    /*animation-direction: alternate;*/
+   /* animation-timing-function:cubic-bezier(1,-0.61,0,1.38);
+    animation-fill-mode:both; */
+
+}
+
+
+@keyframes test {
+    0% {
+        background-color: red;
+        left:0px;
+    }
+    100%{
+        background-color: lightgoldenrodyellow;
+        left:200px;
+    }
+
+}
+
+body{
+    margin:0px;
+    /*fully fleshed to viewport window*/
+}
+.container{
+    background-color: lightsteelblue;
+    height:100vh;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    /*if the container has no position property, then the item ancestor will be attatched to the document body not the container itself*/
+    
+}
+
+.circle{
+    background:lightgoldenrodyellow;
+    width:10vw;
+    height:10vw;
+    border-radius:50%;
+    animation: pulse 2s infinite alternate cubic-bezier(1,0,0,1);
+}
+
+@keyframes pulse{
+    0%{
+        background-color: lightgoldenrodyellow;
+       /* width:10vw;
+        height:10vw;*/
+        scale: 1;
+    }
+
+    100%{
+        background-color: rgb(244, 134, 31);
+        /*width:15vw;
+        height:15vw;*/
+        scale:1.4;
+    }
+}
+
+
+.square{
+    background:lightgoldenrodyellow;
+    width:10vw;
+    height:10vw;
+    animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+    0%{
+        rotate: 0;
+    }
+
+    100%{
+        rotate:350deg;
+    }
+}
+
+.mover {
+    background-color: lightgoldenrodyellow;
+    width:15vw;
+    height:5vw;
+    position:absolute;
+    /*UNDERSTAND THE POSITIONING!!*/
+    bottom:0;
+    left:0;
+    animation: move 3s infinite linear;
+}
+
+@keyframes move{
+    0%{
+        left:-15vw;
+    }
+    100%{
+        left:100vw;
+    }
+}
+
+/*lower properties always override the higher property*/
+
+.changer{
+    background:lightgoldenrodyellow;
+    width:10vw;
+    height:10vw;
+     transition: background 3s ease-in-out,border-radius 3s ease-in-out,
+     rotate 3s ease-in-out;
+     /*OR you can use "all 3s" after transition: property*/
+
+     /*DO NOT PUT TRANSITION ON THE HOVER STATE!*/
+}
+
+.changer:hover {
+     background-color: rgb(244, 134, 31);
+    rotate:360deg;
+    border-radius:100%;
+}
+
+@keyframes change{
+    0% {
+        background-color: lightgoldenrodyellow;
+        rotate:0;
+        border-radius:0;
+    }
+    100%{
+        background-color: rgb(244, 134, 31);
+        rotate:360deg;
+        border-radius:100%;
+    }
+}
